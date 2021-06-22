@@ -82,7 +82,7 @@ public class KartuHasilStudi {
 
     public double ipk(){
         double totalsatu = 0.0, totaldua = 0.0;
-        for(NilaiStudi i : ListNilaistudi){
+        for(NilaiStudi i : ListNilaiStudi){
             totalsatu += i.getnilaiangka() * i.getMatakuliah().getsks();
             totaldua += i.getsks();
         }
@@ -116,7 +116,7 @@ public class KartuHasilStudi {
         System.out.println("Nama Mahasiswa : \nSemester : \nIPK : \nTotal SKS :  ");
         System.out.println("");
         System.out.println("Nilai");
-        for(NilaiStudi ns : ListNilaistudi){
+        for(NilaiStudi ns : ListNilaiStudi){
             System.out.println(ns.toString());
         }
         System.out.println("No. \t\tKode Matakuliah \t\tNama Matakuliah \tSKS \tNilai");
